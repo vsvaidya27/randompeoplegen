@@ -81,7 +81,7 @@ const FetchRandomUsers = () => {
   return (
     <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: '20px' }}>
     {person.map((person, index) => (
-    <div key={index} style={{ border: '1px solid #ccc', padding: '10px' }}>
+    <div key={index} style={{ padding: '1px' }}>
     <Box sx={{ width: '100%' }}>
       <Grid container rowSpacing={1} columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
         <Grid item xs={12}>
@@ -106,6 +106,8 @@ const FetchRandomUsers = () => {
                     {person.cell}
                     <br></br>
                     Nationality: {person.nat}
+                    <br></br>
+                    Age: {person.dob.age}
                   </DialogDescription>
                 </DialogHeader>
               </DialogContent>
