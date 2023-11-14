@@ -101,7 +101,11 @@ const FetchRandomUsers = () => {
                     <br></br>
                     {person.email}
                     <br></br>
-                    {`${person.location.street.number} ${person.location.street.name} ${person.location.city} ${person.location.state} ${person.location.country}`}
+                    {`${person.location.street.number} ${person.location.street.name},  ${person.location.city}, ${person.location.state}, ${person.location.postcode}`}
+                    <br></br>
+                    {person.cell}
+                    <br></br>
+                    Nationality: {person.nat}
                   </DialogDescription>
                 </DialogHeader>
               </DialogContent>
